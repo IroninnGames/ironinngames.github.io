@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ironinn Games | Bağımsız Oyun Stüdyosu</title>
+<meta name="description" content="Ironinn Games, Barkın Demirhan ve Anıl Demirhan tarafından kurulan bağımsız bir oyun stüdyosudur. Steam, Google Play ve web için oyunlar geliştiriyoruz.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<style>
+:root{--y:#FDC000;--ink:#000;--paper:#fff;--mute:#555;--line:#e4e4e4}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Archivo',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{border-bottom:4px solid var(--y)}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;flex-wrap:wrap}
+nav img{height:30px;display:block}
+nav ul{list-style:none;display:flex;gap:24px;padding:0;font-weight:600}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--y);text-decoration-thickness:3px;text-underline-offset:5px}
+.hero{padding:72px 0 80px}
+.hero h1{font-stretch:125%;font-weight:900;font-size:clamp(2.2rem,6.2vw,4.6rem);line-height:1.02;letter-spacing:-.01em;max-width:15ch}
+.hero p{margin-top:24px;max-width:56ch;font-size:1.15rem;color:var(--mute)}
+.btn{display:inline-block;margin-top:32px;background:var(--y);color:var(--ink);font-weight:800;font-stretch:112%;padding:14px 26px;text-decoration:none;border:3px solid var(--ink);border-radius:2px;transition:transform .12s}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:3px 3px 0 var(--ink)}
+section{padding:72px 0}
+h2{font-stretch:125%;font-weight:900;font-size:clamp(1.6rem,3.6vw,2.4rem);line-height:1.1;margin-bottom:12px}
+.lead{color:var(--mute);max-width:60ch;margin-bottom:40px}
+.games{list-style:none;padding:0;border-top:3px solid var(--ink)}
+.game{display:grid;grid-template-columns:1fr auto;gap:8px 32px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line)}
+.game h3{font-stretch:112%;font-weight:800;font-size:1.35rem;line-height:1.2}
+.game p{color:var(--mute);margin-top:4px;max-width:58ch}
+.tag{display:inline-block;background:var(--y);font-weight:700;font-size:.85rem;padding:2px 10px;margin-bottom:8px;border-radius:2px}
+.play{font-weight:800;font-stretch:112%;text-decoration:none;border:3px solid var(--ink);padding:10px 20px;border-radius:2px;white-space:nowrap;transition:background .12s}
+.play:hover{background:var(--y)}
+.about{background:var(--y)}
+.about .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p+p{margin-top:14px}
+.people{list-style:none;padding:0;margin-top:20px;border-top:3px solid var(--ink)}
+.people li{padding:12px 0;border-bottom:1px solid rgba(0,0,0,.25);font-weight:700}
+.people span{display:block;font-weight:400}
+.contact a.mail{font-stretch:112%;font-weight:800;font-size:1.3rem;text-decoration-color:var(--y);text-decoration-thickness:4px;text-underline-offset:5px}
+.policy{background:#f6f6f6}
+.policy h3{margin:28px 0 6px;font-stretch:112%;font-size:1.1rem}
+.policy p,.policy li{max-width:72ch;color:#222}
+.policy ul{padding-left:22px}
+footer{background:var(--ink);color:#fff;padding:32px 0;font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--y)}
+@media(max-width:720px){.about .cols{grid-template-columns:1fr;gap:28px}.game{grid-template-columns:1fr}.play{justify-self:start}.hero{padding:48px 0 56px}section{padding:52px 0}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Ana menü">
+      <a href="#top" aria-label="Ironinn Games ana sayfa"><img src="logo.png" alt="Ironinn Games"></a>
+      <ul>
+        <li><a href="#oyunlar">Oyunlar</a></li>
+        <li><a href="#hakkimizda">Hakkımızda</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+        <li><a href="#gizlilik">Gizlilik</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>İki kardeş, bir oyun stüdyosu.</h1>
+    <p>Ironinn Games; Steam, Google Play ve web için oyun geliştiren bağımsız bir stüdyodur. Buradan tüm oyunlarımıza ulaşabilir ve oynamaya başlayabilirsiniz.</p>
+    <a class="btn" href="#oyunlar">Oyunlarımızı gör</a>
+  </div>
+
+  <section id="oyunlar" aria-labelledby="oyunlar-baslik">
+    <div class="wrap">
+      <h2 id="oyunlar-baslik">Oyunlarımız</h2>
+      <p class="lead">Şu an yayında olan beş oyunumuz. Her biri kendi platformunda ücretsiz veya mağaza sayfasından ulaşılabilir durumda.</p>
+      <ul class="games">
+        <li class="game">
+          <div>
+            <span class="tag">Steam</span>
+            <h3>Bridges of Patience</h3>
+            <p>Sabır ve dikkat isteyen, PC için geliştirdiğimiz Steam oyunu.</p>
+          </div>
+          <a class="play" href="https://store.steampowered.com/app/2968410/Bridges_of_Patience/" target="_blank" rel="noopener">Steam'de aç</a>
+        </li>
+        <li class="game">
+          <div>
+            <span class="tag">Google Play</span>
+            <h3>Golden Fork: Restoran Tycoon</h3>
+            <p>Restoranını kur, büyüt ve şehrin en iyi mutfağını yönet.</p>
+          </div>
+          <a class="play" href="https://play.google.com/store/apps/details?id=com.IroninnGames.GoldenFork" target="_blank" rel="noopener">Google Play'de aç</a>
+        </li>
+        <li class="game">
+          <div>
+            <span class="tag">Google Play</span>
+            <h3>Tic Tac Toe: XOX 2 Player Game</h3>
+            <p>Klasik XOX oyunu. Tek cihazda arkadaşınla sırayla oyna.</p>
+          </div>
+          <a class="play" href="https://play.google.com/store/apps/details?id=com.IroninnGames.TickTacToe" target="_blank" rel="noopener">Google Play'de aç</a>
+        </li>
+        <li class="game">
+          <div>
+            <span class="tag">Web · PLAYFORGE</span>
+            <h3>TV Series Maker Tycoon</h3>
+            <p>Kendi dizi yapım şirketini yönet, dizilerini çek ve yayına sok.</p>
+          </div>
+          <a class="play" href="https://playforgee.vercel.app/oyunlar/tv-series-maker-tycoon" target="_blank" rel="noopener">Tarayıcıda oyna</a>
+        </li>
+        <li class="game">
+          <div>
+            <span class="tag">Web · PLAYFORGE</span>
+            <h3>Tower Stack</h3>
+            <p>Blokları üst üste diz, kuleni olabildiğince yükseğe çıkar.</p>
+          </div>
+          <a class="play" href="https://playforgee.vercel.app/oyunlar/tower-stack" target="_blank" rel="noopener">Tarayıcıda oyna</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="hakkimizda" class="about" aria-labelledby="hakkimizda-baslik">
+    <div class="wrap">
+      <h2 id="hakkimizda-baslik">Hakkımızda</h2>
+      <div class="cols">
+        <div>
+          <p>Ironinn Games, kardeşler Barkın Demirhan ve Anıl Demirhan tarafından kurulan bağımsız bir oyun şirketidir.</p>
+          <p>Mobil, PC ve web için farklı türlerde oyunlar geliştiriyoruz: hızlı oynanan klasikler, yönetim simülasyonları ve sabır gerektiren bulmaca oyunları. Amacımız, oyuncuların kısa ya da uzun her seansta keyif alacağı oyunlar yapmak.</p>
+        </div>
+        <div>
+          <p>Stüdyonun arkasındaki kişiler:</p>
+          <ul class="people">
+            <li>Barkın Demirhan<span>Kurucu ortak</span></li>
+            <li>Anıl Demirhan<span>Kurucu ortak</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="iletisim" class="contact" aria-labelledby="iletisim-baslik">
+    <div class="wrap">
+      <h2 id="iletisim-baslik">İletişim</h2>
+      <p class="lead">Oyunlarımız hakkında soru, geri bildirim veya iş birliği teklifleriniz için bize yazın.</p>
+      <a class="mail" href="mailto:ironinngames@gmail.com">ironinngames@gmail.com</a>
+    </div>
+  </section>
+
+  <section id="gizlilik" class="policy" aria-labelledby="gizlilik-baslik">
+    <div class="wrap">
+      <h2 id="gizlilik-baslik">Gizlilik Politikası</h2>
+      <p>Son güncelleme: Ekim 2026</p>
+
+      <h3>Topladığımız bilgiler</h3>
+      <p>Bu web sitesi kullanıcılardan doğrudan kişisel bilgi (ad, e-posta vb.) toplamaz. Bize e-posta gönderirseniz, adresiniz yalnızca yanıt vermek için kullanılır.</p>
+
+      <h3>Çerezler ve reklamlar</h3>
+      <p>Sitemizde Google AdSense gibi üçüncü taraf reklam hizmetleri kullanılabilir. Google dahil üçüncü taraf sağlayıcılar, kullanıcıların bu siteye veya diğer sitelere yaptığı önceki ziyaretlere göre reklam göstermek için çerez kullanabilir. Kullanıcılar, <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Reklam Ayarları</a> sayfasından kişiselleştirilmiş reklamları devre dışı bırakabilir.</p>
+
+      <h3>Üçüncü taraf bağlantılar</h3>
+      <p>Sitemiz; Steam, Google Play ve PLAYFORGE gibi dış sitelere bağlantılar içerir. Bu sitelerin gizlilik uygulamalarından Ironinn Games sorumlu değildir.</p>
+
+      <h3>Oyunlarımız</h3>
+      <p>Mobil oyunlarımız, yayınlandıkları mağazaların (Google Play, Steam) kurallarına uygundur. Oyunlarda reklam gösterilmesi halinde reklam sağlayıcıların gizlilik politikaları geçerlidir.</p>
+
+      <h3>İletişim</h3>
+      <p>Bu politika hakkındaki sorularınız için <a href="mailto:ironinngames@gmail.com">ironinngames@gmail.com</a> adresinden bize ulaşabilirsiniz.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yil">2026</span> Ironinn Games. Tüm hakları saklıdır.</span>
+    <a href="#gizlilik">Gizlilik Politikası</a>
+  </div>
+</footer>
+<script>document.getElementById('yil').textContent=new Date().getFullYear();</script>
+</body>
+</html>
